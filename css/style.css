@@ -1,0 +1,52 @@
+.verh {
+    display: flex;
+    background-color: rgb(158, 140, 238);
+    margin: auto;
+    padding: 0px 1px;
+}
+
+.verh img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.verh h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.verh h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.btns {
+    display: flex;
+    background-color: rgb(115, 101, 177);
+    margin: auto;
+}
+
+.btns button {
+    color: white;
+    background-color: rgb(115, 101, 177);
+    border-color: rgb(115, 101, 177);
+    padding: 5px 40px;
+}
+
+.naz {
+    display: flex;
+    background-color: rgb(206, 198, 241);
+    margin: auto;
+}
+
+.naz button {
+    color: white;
+    background-color: rgb(206, 198, 241);
+    border-color: rgb(206, 198, 241);
+}
+
+.naz h1 {
+    color:rgb(62, 36, 110);
+    font-size: 20px;
+}
