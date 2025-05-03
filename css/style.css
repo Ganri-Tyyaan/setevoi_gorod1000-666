@@ -1,52 +1,22 @@
-.verh {
-    display: flex;
-    background-color: rgb(158, 140, 238);
-    margin: auto;
-    padding: 0px 1px;
+.dsx{
+    font-size: 4ch;
+    font-weight: 600;
+    text-align: center;
 }
-
-.verh img {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
+.footer{
+    position: absolute;
+    bottom: 100px;
 }
-
-.verh h2 {
-    color: white;
-    font-size: 20px;
+.background{
+    background-color:blueviolet;
+    width: 1420px;
+    height:100px;
+    margin: -50px;
 }
-
-.verh h1 {
-    color: white;
-    font-size: 30px;
+.text-footer{
+    text-align: right;
 }
-
-.btns {
-    display: flex;
-    background-color: rgb(115, 101, 177);
-    margin: auto;
-}
-
-.btns button {
-    color: white;
-    background-color: rgb(115, 101, 177);
-    border-color: rgb(115, 101, 177);
-    padding: 5px 40px;
-}
-
-.naz {
-    display: flex;
-    background-color: rgb(206, 198, 241);
-    margin: auto;
-}
-
-.naz button {
-    color: white;
-    background-color: rgb(206, 198, 241);
-    border-color: rgb(206, 198, 241);
-}
-
-.naz h1 {
-    color:rgb(62, 36, 110);
-    font-size: 20px;
+.img-footer{
+    width: 50px;
+    float: left;
 }
