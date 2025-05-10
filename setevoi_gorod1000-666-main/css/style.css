@@ -1,0 +1,116 @@
+.verh {
+    display: flex;
+    background-color: rgb(158, 140, 238);
+    margin: auto;
+    padding: 0px 1px;
+}
+
+.verh img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.verh h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.verh h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.btns {
+    display: flex;
+    background-color: rgb(115, 101, 177);
+    margin: auto;
+}
+
+.btns button {
+    color: white;
+    background-color: rgb(115, 101, 177);
+    border-color: rgb(115, 101, 177);
+    padding: 5px 40px;
+}
+
+.naz {
+    display: flex;
+    background-color: rgb(206, 198, 241);
+    margin: auto;
+
+}
+
+.naz button {
+    width: 50px;
+    color: white;
+    background-color: rgb(206, 198, 241);
+    border-color: rgb(206, 198, 241);
+    background: url("../images/стрела.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.naz h1 {
+    color: rgb(62, 36, 110);
+    font-size: 20px;
+}
+
+main {
+    background-color: rgb(240, 231, 255);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+
+
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card table,
+tr,
+td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.card table {
+    width: 50%;
+}
+
+.card .day {
+    text-align: center;
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(115, 101, 177);
+}
+
+.text-footer {
+    position: relative;
+    bottom: -40px;
+    right: 10px;
+    text-align: right;
+}
+
+.img-footer {
+    width: 50px;
+    position: absolute;
+    left: 10px;
+}
