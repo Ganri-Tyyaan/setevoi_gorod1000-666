@@ -74,28 +74,16 @@
     float: left;
 }
 
-
-.inner-rectangle{
-    background-color:rgb(167, 43, 43);
-    width: 400px; /* Ширина внешнего прямоугольника */
-    height: 450px; /* Высота внешнего прямоугольника */
-    display: flex;
-    padding: 10px;
-    margin-top: 10ch;
-    margin-left: 57ch;
-}
-
-
 .outer-rectangle {
-    width: 600px; /* Ширина внешнего прямоугольника */
-    height: 450px; /* Высота внешнего прямоугольника */
+    width: 450px; /* Ширина внешнего прямоугольника */
+    height: 350px; /* Высота внешнего прямоугольника */
     display: flex;
     padding: 10px;
     font-size: 16px; /* Размер шрифта */
     text-align: left; /* Выравнивание текста по левому краю */
     overflow-y: auto; /* Прокрутка по вертикали, если текст не помещается */
     background-color:rgb(255, 255, 255); /* Цвет внешнего прямоугольника */
-    margin-top: 10ch;
-    margin-left: 40ch;
-    border: 2px solid rgba(0, 0, 0, 0.333)
+    margin-top: 5ch;
+    margin-left: 32ch;
+    border: 2px solid rgba(0, 0, 0, 0.333);
 }
