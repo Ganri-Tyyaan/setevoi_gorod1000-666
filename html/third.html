@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отчеты об успеваемости и посещаемости</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="verh">
+            <img style="color: white; " src="../images/иконка.png">
+            <div class="verh__right">
+                <h2>Сетевой город. Образование</h2>
+                <h1>ШКОЛА АЛГОРИТМИКА</h1>
+            </div>
+        </div>
+        <div class="btns">
+            <button id="ma-btn">Главная</button>
+            <button id="dv-btn">Дневник</button>
+            <button id="ot-btn">Отчеты</button>
+            <button id="cl-btn">Кликер</button>
+        </div>
+        <div class="naz">
+            <button id = "s-btn"></button>
+            <h1>ОТЧЕТЫ ОБ УСПЕВАЕМОСТИ И ПОСЕЩАЕМОСТИ: УЧЕНИК</h1>
+        </div>
+        <script>
+            let ma = document.getElementById("ma-btn")
+            let dv = document.getElementById("dv-btn")
+            let ot = document.getElementById("ot-btn")
+            let cl = document.getElementById("cl-btn")
+            let s = document.getElementById("s-btn")
+            s.addEventListener("click", () => {
+                location.assign("../index.html")
+            })
+            ma.addEventListener("click", () => {
+                location.assign("../index.html")
+            })
+            dv.addEventListener("click", () => {
+                location.assign("../html/second.html")
+            })
+            ot.addEventListener("click", () => {
+                location.assign("../html/third.html")
+            })
+            cl.addEventListener("click", () => {
+                location.assign("../html/click.html")
+            })
+        </script>
+    </header>
+
+    <main>
+        <style>
+            main {
+                padding-left: 0;
+                margin-left: 0;
+            }
+
+            .table-wrapper {
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            table {
+                width: 50%;
+                border-collapse: collapse;
+                position: center;
+
+            }
+
+            th,
+            td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+        </head>
+
+        <body>
+            <div class="table-wrapper">
+                <table id="reportTable">
+                    <thead>
+                        <tr>
+                            <th>Предмет</th>
+                            <th>Оценка (средний балл)</th>
+                            <th>Посещаемость (кол-во пройденных уроков)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Данные будут добавлены здесь с помощью JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <script>
+                // Списки предметов и оценок
+                const subjects = ["VEB", "Аналитика", "Математика", "Python", "Информатика", "Unity"];
+                const grades = ["5.0", "4.0", "3.0", "2.0", "4.5", "3.5", "2.5", "4.49"];
+                const numbers = Array.from({ length: 15 }, (_, i) => i + 1);
+
+                // Функция для получения случайного элемента из массива
+                function getRandomElement(array) {
+                    return array[Math.floor(Math.random() * array.length)];
+                }
+
+                // Функция для создания строк таблицы
+                function createTableRows() {
+                    const tableBody = document.querySelector('#reportTable tbody');
+                    subjects.forEach(subject => {
+                        const grade = getRandomElement(grades);
+                        const attendance = getRandomElement(numbers);
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                    <td>${subject}</td>
+                    <td>${grade}</td>
+                    <td>${attendance}</td>
+                `;
+                        tableBody.appendChild(row);
+                    });
+                }
+
+                // Вызов функции для создания строк таблицы
+                createTableRows();
+            </script>
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="text-footer">
+            <img class="img-footer" src="../images/иконка.png">
+            <p>Сетевой город Алгоритмика. Без образования 5.52.666.1000-7</p>
+            <p>1500-2025 САНтех, село Волжанский. Все права не защищены.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
